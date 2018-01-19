@@ -2,6 +2,7 @@
 # Create a Custom Network
 
 - name: Create Custom Network
+  hosts: localhost
   gce_net:
     name: customnet
     mode: custom
