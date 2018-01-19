@@ -4,12 +4,10 @@
 - name: Create Custom Network
   hosts: localhost
   connection: local
-  tasks:
-    - name: Deploy New Customer Network
-      gce_net:
-      name: customnet
-      mode: custom
-      subnet_name: "customsubnet"
-      subnet_region: us-east1
-      ipv4_range: '10.240.17.0/24'
-      state: "present"
+  gce_net:
+    name: customnet
+    mode: custom
+    subnet_name: "customsubnet"
+    subnet_region: us-east1
+    ipv4_range: '10.240.17.0/24'
+    state: "present"
