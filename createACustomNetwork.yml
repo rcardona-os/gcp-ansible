@@ -10,7 +10,7 @@
         mode: "{{ vpc_mode }}"
         subnet_name: "{{ vpc_subnet_name }}"
         subnet_region: "{{ vpc_region }}"
-        ipv4_range: "{{ vpc_ipv4_range }}"
+        ipv4_range: '"{{ vpc_ipv4_range }}"'
         state: "present"
         
 
