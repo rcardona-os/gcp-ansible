@@ -5,7 +5,8 @@
   hosts: localhost
   connection: local
   tasks:
-    gce_net:
+    - name: Deploy New Customer Network
+      gce_net:
       name: customnet
       mode: custom
       subnet_name: "customsubnet"
