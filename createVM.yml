@@ -7,7 +7,7 @@
   tasks:
     - name: Deploy new VM instance
       gce:
-        instance_names: my-test-instance1
+        instance_names: "{{ vm_instance_name }}"
         zone: us-central1-a
         machine_type: n1-standard-1
         image: debian-8
