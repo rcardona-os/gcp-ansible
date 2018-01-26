@@ -1,0 +1,18 @@
+---
+# Create a simple VM
+
+- name: Create a simple VM instance
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Deploy new VM instance
+      gce:
+        instance_names: "{{ vm_instance_name_1 }}"
+        zone: us-central1-a
+        machine_type: n1-standard-1
+        image: debian-8
+        state: present
+        #service_account_email: "your-sa@your-project-name.iam.gserviceaccount.com"
+        #credentials_file: "/path/to/your-key.json"
+        project_id: poc-lb
+        disk_size: 32
