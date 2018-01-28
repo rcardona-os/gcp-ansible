@@ -1,0 +1,13 @@
+---
+# Create a simple VM
+
+- name: Create a simple VM instance
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Deploy new VM instance
+      gce_tag:
+        instance_name: leo-1
+        tags: staging
+        zone: us-central1-a
+        state: present
