@@ -1,7 +1,7 @@
 ---
 # Create a simple VM
 
-- name: Create a simple VM instance
+- name: Create a simple Network VM Tag
   hosts: localhost
   connection: local
   tasks:
