@@ -8,6 +8,6 @@
     - name: Deploy new VM instance
       gce_tag:
         instance_name: leo-1
-        tags: staging
+        tags: staging1
         zone: us-central1-a
         state: present
