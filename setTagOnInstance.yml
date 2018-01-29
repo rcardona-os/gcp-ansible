@@ -7,7 +7,7 @@
   tasks:
     - name: Deploy new VM instance
       gce_tag:
-        #instance_name: leo-1
+        instance_name: leo-1
         tags: staging
         zone: us-central1-a
         state: present
